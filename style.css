@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:300,400,600,700,800');
+
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialised;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 16px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+body,
+p {
+	padding: 0;
+	margin: 0;
+	font: inherit;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#nav {
+	position: fixed;
+	width: 100vw;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+#nav p {
+	margin: .7rem .7rem .7rem .7rem;
+	width: 11.25em;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#header {
+	position: relative;
+	height: 100vh;
+	background-color: #ddd;
+	background-image:
+		url(media/oceanfish-blaque-x.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.overlay-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.overlay-main img {
+	margin: 2rem;
+	width: 11.25rem;
+	display: inline;
+	text-align: center;
+}
+
+.overlay-main h1 {
+	margin: -1.5rem 0 2rem 0;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 3.8rem;
+	text-align: center;
+}
+
+.overlay-main h2 {
+	margin: -3.0rem 0 2rem 0;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 3.0rem;
+	text-align: center;
+}
+
+.overlay-main p {
+	margin: 0 0;
+	font-family: Lora, serif;
+	font-style: italic;
+	font-size: 2rem;
+	max-width: 800px;
+	text-align: center;
+}
+
+#contents {
+	height: 100vh
+}
