@@ -6,9 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>NoTimeToWaste</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
 	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+	<script src="https://projects.lukehaas.me/scrollify/script/jquery.scrollify.js"></script>
 	<script src="app.js"></script>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -20,21 +21,10 @@
 			<a href="">menu</a>
 		</li>
 	</ul>
-	<div id="header">
-		<!--
-		<div id="video-container">
-			<video autoplay muted loop oncontextmenu="return false;" id="slowmo">
-				<source src="media/plastics-ocean-pixabay.mp4" type="video/mp4">
-			</video>
-			<script>
-				document.getElementById('slowmo').playbackRate = 0.5;
-
-			</script>
-		</div>
--->
+	<div id="header" class="scroll">
 		<div class="overlay-main">
 			<div>
-				<img src="media/wdlogo.png" alt="no time to waste logo" class="center">
+				<img src="media/wdlogo.png" alt="no time to waste logo" class="center not-in-mobile">
 			</div>
 			<div>
 				<h1>Plastic Waste</h1>
@@ -58,31 +48,85 @@
 		<div class="button"><a href="#plastics"><i class="fas fa-recycle"></i></a></div>
 		<div class="button"><a href="#social"><i class="fas fa-share-alt"></i></a></div>
 	</div>
-	<div id="contents">
-		<div id="plankton">
-			section:plankton
-		</div>
-		<div id="smallfish">
-			section:smallfish
-		</div>
-		<div id="bigfish">
-			section:bigfish
-		</div>
-		<div id="predator">
-			section:predator
-		</div>
-		<div id="human">
-			section:human
-		</div>
-		<div id="plastics">
-			section:plastics
+	<div class="section scroll" id="plankton">
+		<div style="background-image:url(media/planktons-peter-parks.jpg)"></div>
+		<div class="info">
+			<h3>plankton</h3>
+			<p>plankton</p>
+			<a class="goto" href="">more info</a>
 		</div>
 	</div>
-	<div id="footer">
-		<div id="social">section:socialmedia</div>
-		<div id="rights">
-			<p>© 2019 Daehee Kim, Prague College. All Rights Reserved.</p>
+	<div class="section scroll" id="smallfish">
+		<div class="vid">
+			<video autoplay muted loop playsinline oncontextmenu="return false;" id="slowmo">
+				<source src="media/fishvideo.mp4" type="video/mp4">
+			</video>
+			<script>
+				document.getElementById('slowmo').playbackRate = 0.6;
+
+			</script>
 		</div>
+		<div class="info">
+			<h3>smallfish</h3>
+			<p>smallfish</p>
+			<a class="goto" href="">more info</a>
+		</div>
+	</div>
+	<div class="section scroll" id="bigfish">
+		<div style="background-image:url(media/whaleshark-pete-johnson.jpg)"></div>
+		<div class="info">
+			<h3>bigfish</h3>
+			<p>bigfish</p>
+			<a class="goto" href="">more info</a>
+		</div>
+	</div>
+	<div class="section scroll" id="predator">
+		<div style="background-image:url(media/turtle-underwater-belle-co.jpg); left: 0"></div>
+		<div class="info">
+			<h3>predator</h3>
+			<p>predator</p>
+			<a class="goto" href="">more info</a>
+		</div>
+	</div>
+	<div class="section scroll" id="human">
+		<div style="background-image:url(media/fried-fish-valeria-boltneva.jpg)"></div>
+		<div class="info">
+			<h3>human</h3>
+			<p>human</p>
+			<a class="goto" href="">more info</a>
+		</div>
+	</div>
+	<div class="section scroll" id="plastics">
+		<div class="vid">
+			<video autoplay muted loop playsinline oncontextmenu="return false;" id="slowmo">
+				<source src="media/plastics-ocean-pixabay.mp4" type="video/mp4">
+			</video>
+			<script>
+				document.getElementById('slowmo').playbackRate = 0.6;
+
+			</script>
+		</div>
+		<div class="info">
+			<h3>Single-use Plastics to be Banned in EU</h3>
+			<ul class="twocolumns">
+				<li>Cups</li>
+				<li>Food containers</li>
+				<li>Beverage containers</li>
+				<li>Cutlery</li>
+				<li>Tabacco filters</li>
+				<li>Straws</li>
+				<li>Stirrers</li>
+				<li>Balloon sticks</li>
+				<li>Sanitary applications</li>
+				<li>Lightweight bags</li>
+			</ul>
+			<a class="goto" href="">more info</a>
+		</div>
+	</div>
+	<div id="social" class="scroll">
+	</div>
+	<div id="rights">
+		<p>© 2019 Daehee Kim, Prague College. All Rights Reserved.</p>
 	</div>
 
 </body>
